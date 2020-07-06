@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>寝ても覚めても - ティザーサイト</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: serif;
+    }
+    .wrapper {
+      width: 100%;
+      display: flex;
+      text-align: center;
+      letter-spacing: .5em;
+    }
+    .bgBox {
+      width: 50%;
+      height: 100vh;
+      background-image: url(bg.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+    #bg-video {
+      position: fixed;
+      min-width: 50%;
+      min-height: 100%;
+      left: -350px;
+      width: auto;
+      height: auto;
+      z-index: -100;
+      background: url('poster.png') no-repeat;
+      background-size: cover;
+    }
+    .textBox {
+      width: 50%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: #fff;
+      height: 100vh;
+      background: linear-gradient(-45deg, rgba(4, 114, 124, 0.4), rgba(17, 66, 99, 0.6));
+    }
+    .textBox2 h1 {
+      color: yellow;
+      text-shadow: 5px 3px 10px white;
+      font-size: 60px;
+    }
+    .textBox2 h3 {
+      font-size: 35px;
+      margin: 20px 0;
+    }
+    .text1 {
+      font-size: 25px;
+      margin: 20px 0;
+    }
+    .text2 {
+      font-size: 20px;
+      display: inline;
+    }
+    .follow {
+      width: 100%;
+    }
+    .inner {
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+    }
+    .facebook {
+      margin: 0 10px;
+    }
+    .bgBox {
+      -webkit-writing-mode: vertical-rl;
+      -moz-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+      -ms-writing-mode: vertical-rl;
+      writing-mode: vertical-rl;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .bgBox p {
+      font-size: 35px;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrapper">
+    <div class="textBox">
+      <video id="bg-video" src="video.mov" poster="poster.png" autoplay loop muted></video>
+      <div class="textBox2">
+        <h1>寝ても覚めても</h1>
+        <h3>愛してしまう<br>「あなた」を−。</h3>
+        <p class="text1">情報解禁日：2018年7月31日</p>
+        <div class="follow">
+          <div class="inner">
+            <p class="text2">
+              フォローして最新情報を受け取る
+            </p>
+            <a href="#">
+              <img src="facebook.png" alt="facebookリンク" class="facebook">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bgBox">
+      <p>運命の人は、二人いた。</p>
+    </div>
+  </main>
+</body>
+</html>
